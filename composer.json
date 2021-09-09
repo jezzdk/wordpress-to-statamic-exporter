@@ -1,0 +1,21 @@
+{
+    "name": "jezzdk/wordpress-to-statamic-exporter",
+    "description": "Export data from Wordpress to Statamic",
+    "keywords": [
+        "wordpres",
+        "statamic",
+        "exporter"
+    ],
+    "homepage": "https://github.com/jezzdk/wordpress-to-statamic-exporter",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jess Stopa",
+            "email": "jess@stopa.dk",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0"
+    }
+}
