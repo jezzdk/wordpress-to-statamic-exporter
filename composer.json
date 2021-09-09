@@ -6,6 +6,7 @@
         "statamic",
         "exporter"
     ],
+    "type": "wordpress-plugin",
     "homepage": "https://github.com/jezzdk/wordpress-to-statamic-exporter",
     "license": "MIT",
     "authors": [
