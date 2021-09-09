@@ -6,6 +6,8 @@ class Exporter
 {
     const PREFIX = 'statamic-json';
 
+    protected $upload_dir;
+    protected $directory;
     protected $filename;
     protected $file;
     protected $collections = array();
