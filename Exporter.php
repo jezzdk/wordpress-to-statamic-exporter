@@ -12,7 +12,6 @@ class Exporter
     protected $file;
     protected $collections = array();
     protected $pages       = array();
-    protected $settings    = array();
     protected $taxonomies  = array();
 
     public function __construct()
@@ -117,13 +116,6 @@ class Exporter
         });
     }
 
-    private function setSettings()
-    {
-        $this->settings['site_url']  = get_option( 'siteurl' );
-        $this->settings['site_name'] = get_bloginfo('name');
-        $this->settings['timezone']  = ini_get('date.timezone');
-    }
-
     private function json()
     {
         $content = array();
@@ -138,10 +130,6 @@ class Exporter
 
         if (! empty($this->taxonomies)) {
             $content['taxonomies'] = $this->taxonomies;
-        }
-
-        if (! empty($this->settings)) {
-            $content['settings'] = $this->settings;
         }
 
         return json_encode($content, JSON_PRETTY_PRINT);

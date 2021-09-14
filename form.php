@@ -20,10 +20,6 @@
             </p>
 
             <p>
-                <label><input type="checkbox" name="content[]" value="settings">Settings</label>
-            </p>
-
-            <p>
                 <label><input type="checkbox" name="content[]" value="taxonomies">Taxonomies</label>
             </p>
 
